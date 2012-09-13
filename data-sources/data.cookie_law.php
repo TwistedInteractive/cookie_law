@@ -65,8 +65,8 @@ Class datasourcecookie_law extends StaticXMLDatasource
 	{
 		document.write(unescape("%%3Cdiv id=\'cookies_bar\'%%3E" +
 				"%s" +
-				"%%3Ca href=\'#\' id=\'cookies_accept\'%%3Eaccepteren%%3C/a%%3E" +
-				"%%3Ca href=\'#\' id=\'cookies_decline\'%%3Eweigeren%%3C/a%%3E" +
+				"%%3Ca href=\'#\' id=\'cookies_accept\'%%3E%s%%3C/a%%3E" +
+				"%%3Ca href=\'#\' id=\'cookies_decline\'%%3E%s%%3C/a%%3E" +
 				"%%3Cdiv id=\'cookies_disclaimer_box\'%%3E" +
 				"%s" +
 				"%%3C/div%%3E" +
@@ -103,6 +103,8 @@ Class datasourcecookie_law extends StaticXMLDatasource
 			Symphony::Configuration()->get('javascript', 'cookie_law'),
 			str_replace('{', '%3Ca href=\'#\' id=\'cookies_disclaimer\'%3E',
 				str_replace('}', '%3C/a%3E', Symphony::Configuration()->get('text', 'cookie_law'))),
+      Symphony::Configuration()->get('accept', 'cookie_law'),
+      Symphony::Configuration()->get('decline', 'cookie_law'),
 			str_replace(array("\r", "\n"), array('', '<br />'), Symphony::Configuration()->get('disclaimer', 'cookie_law'))
 		);
 
