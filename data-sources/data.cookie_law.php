@@ -51,10 +51,19 @@ Class datasourcecookie_law extends StaticXMLDatasource
 		return false;
 	}
 
+	/**
+	 * Return translation
+	 * @param $str
+	 * @return string
+	 */
+	public function __($str)
+	{
+		return Lang::Dictionary()->translate($str);
+	}
+
 	public function execute(&$param_pool)
 	{
 		$result = new XMLElement($this->dsParamROOTELEMENT);
-
 
 		$html = sprintf('
 <script type="text/javascript">
@@ -65,8 +74,8 @@ Class datasourcecookie_law extends StaticXMLDatasource
 	{
 		document.write(unescape("%%3Cdiv id=\'cookies_bar\'%%3E" +
 				"%s" +
-				"%%3Ca href=\'#\' id=\'cookies_accept\'%%3Eaccepteren%%3C/a%%3E" +
-				"%%3Ca href=\'#\' id=\'cookies_decline\'%%3Eweigeren%%3C/a%%3E" +
+				"%%3Ca href=\'#\' id=\'cookies_accept\'%%3E%s%%3C/a%%3E" +
+				"%%3Ca href=\'#\' id=\'cookies_decline\'%%3E%s%%3C/a%%3E" +
 				"%%3Cdiv id=\'cookies_disclaimer_box\'%%3E" +
 				"%s" +
 				"%%3C/div%%3E" +
@@ -102,8 +111,10 @@ Class datasourcecookie_law extends StaticXMLDatasource
 </script>',
 			Symphony::Configuration()->get('javascript', 'cookie_law'),
 			str_replace('{', '%3Ca href=\'#\' id=\'cookies_disclaimer\'%3E',
-				str_replace('}', '%3C/a%3E', Symphony::Configuration()->get('text', 'cookie_law'))),
-			str_replace(array("\r", "\n"), array('', '<br />'), Symphony::Configuration()->get('disclaimer', 'cookie_law'))
+				str_replace('}', '%3C/a%3E', $this->__('cookie_text'))),
+      			$this->__('cookie_accept'),
+      			$this->__('cookie_decline'),
+				str_replace(array("\r", "\n"), array('', '<br />'), $this->__('cookie_disclaimer'))
 		);
 
 		$result->appendChild(new XMLElement('html', $html));

@@ -32,3 +32,8 @@ it could also be used for your own custom Javascript. When the value is `0`, thi
 A nice little detail to 'push' people into accepting the cookie: when the cookie is declined, the `cookie_accept`-cookie
 will expire at the end of the browsing session, meaning that the next time the user comes to your website, they are
 confronted with the same question. However... when the user accepts the cookie, it is valid until December 31st, 2999.
+
+## Localisation
+
+The texts for the cookie message are stored in the `lang`-folder. So if you want to change these texts, you can change
+the text for the corresponding language.

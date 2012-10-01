@@ -1,7 +1,0 @@
-{
-    "text": "To constantly improve the quality of this website we make use of {cookies}.",
-    "disclaimer": "We make use of cookies on this website. A cookie is a small file that is sent to your browser and stored on the hard drive of your computer.\n\nThrough our website, a cookie is placed by Google, as part of the 'Analytics' service. We use this service to track and get reports about how visitors use the website. Google may transfer this information to third parties if Google is legally required or if third parties process the information on Google's behalf. We have no influence on this.\n\nThe information we collect is anonymous as much as possible. Your IP address is not explicitly given. The information is transmitted to and stored by Google on servers in the United States.",
-    "accept": "accept",
-    "decline": "decline",
-	"javascript": "var _gaq = _gaq || [];\n_gaq.push(['_setAccount', 'UA-XXXXXXXX-X']);\n_gaq.push(['_gat._anonymizeIp']);\n_gaq.push(['_trackPageview']);\n\n(function() {\nvar ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;\nga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';\nvar s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);\n})();"
-}

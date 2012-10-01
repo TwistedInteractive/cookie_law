@@ -1,7 +1,0 @@
-{
-    "text": "Om de kwaliteit van deze website constant te verbeteren maken wij gebruik van {cookies}.",
-    "disclaimer": "Wij maken op deze website gebruik van cookies. Een cookie is een eenvoudig klein bestandje dat met pagina’s van deze website wordt meegestuurd en door uw browser op uw harde schrijf van uw computer wordt opgeslagen.\n\nVia onze website wordt een cookie geplaatst van het Amerikaanse bedrijf Google, als deel van de “Analytics”-dienst. Wij gebruiken deze dienst om bij te houden en rapportages te krijgen over hoe bezoekers de website gebruiken. Google kan deze informatie aan derden verschaffen indien Google hiertoe wettelijk wordt verplicht, of voor zover derden de informatie namens Google verwerken. Wij hebben hier geen invloed op.\n\nDe informatie die Google verzamelt wordt zo veel mogelijk geanonimiseerd. Uw IP-adres wordt nadrukkelijk niet meegegeven. De informatie wordt overgebracht naar en door Google opgeslagen op servers in de Verenigde Staten.",
-    "accept": "accepteren",
-    "decline": "weigeren",
-    "javascript": "var _gaq = _gaq || [];\n_gaq.push(['_setAccount', 'UA-XXXXXXXX-X']);\n_gaq.push(['_gat._anonymizeIp']);\n_gaq.push(['_trackPageview']);\n\n(function() {\nvar ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;\nga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';\nvar s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);\n})();"
-}
