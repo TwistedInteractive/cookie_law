@@ -2,16 +2,12 @@
 <extension id="cookie_law" xmlns="http://symphony-cms.com/schemas/extension/1.0">
 	<name>Cookie Law</name>
 	<description>Inject Javascript as soon as the user accepts the cookie law.</description>
-	<repo type="github">https://github.com/kanduvisla/cookie_law</repo>
+	<repo type="github">https://github.com/TwistedInteractive/cookie_law</repo>
     <types>
         <type>Workflow</type>
     </types>
 	<authors>
-		<author>
-			<name github="kanduvisla" symphony="kanduvisla">Giel Berkers</name>
-            <email>info@gielberkers.com</email>
-            <website>http://www.gielberkers.com</website>
-		</author>
+		
 	</authors>
 	<releases>
 		<release version="1.1" date="2012-10-01" min="2.1.2" max="2.3" />
