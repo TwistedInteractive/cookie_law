@@ -7,7 +7,8 @@
 			 'version' => '1.1',
 			 'release-date' => '2012-10-01',
 			 'author' => array(
-				 'name'     => '<a href="http://gielberkers.com">Giel Berkers</a>'
+				 'name'     => 'Twisted Interactive',
+				 'website'  => 'http://www.twisted.nl'
 			 ),
 			 'description' => 'Inject Javascript as soon as the user accepts the cookie law.'
 		 );
